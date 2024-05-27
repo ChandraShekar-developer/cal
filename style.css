@@ -1,0 +1,120 @@
+.body{
+    
+    width: 13rem;
+    height: 17rem;
+    border: 2px black solid; 
+    border-radius: 20%;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 10%;
+    /* background-color: aqua; */
+    /* border: 2px navy dotted;
+    border-radius: 20%; */
+    filter: drop-shadow(20px 10px) black;
+}
+h1{
+    margin-left:3%;
+    /* border: 1px navy dotted;
+    border-radius: 20%;
+     */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 100%;
+    color: goldenrod;
+    filter: drop-shadow(10px 5px) black; 
+   
+    
+    align-items: center;
+    font-size: medium;
+    /* background-color: aqua; */
+}
+.div.td{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns:7px 7px 7px 7px;
+    grid-template-rows: 7px 7px 7px 7px ; */
+    text-align: justify;
+    text-align: right;
+    color: blue;
+    text-shadow: 20px;
+    background-color: aqua;
+    
+}
+.div1.td{
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 7px 7px 7px 7px;
+    grid-template-rows: 7px 7px 7px 7px ;
+    text-align: center;
+}
+.div2.td{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns:7px 7px 7px 7px;
+    grid-template-rows: 7px 7px 7px 7px ; */
+    text-align: justify;
+    text-align: right;
+    color: blue;
+    text-shadow: 20px;
+    
+}
+.div3.td{
+    background-color: aqua;
+    
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    /*display: grid;
+    grid-template-columns:7px 7px 7px 7px;
+    grid-template-rows: 7px 7px 7px 7px ;
+    grid-column: 7px 7px 7px 7px;
+    text-align: justify; */
+    text-align: right;
+    color: blue;
+    text-shadow: 20px;
+    padding-top: 20px;
+
+    
+    
+}
+button{
+    background-color: aqua;
+    color: blue;
+    transform: translate(3s);
+    border-radius: 40%;
+    text-shadow: 20% 10%;
+    border: 2px tomato solid;
+    filter: drop-shadow(20px);
+}
+button:hover{
+    background-color: rgb(129, 183, 231);
+    color: black;
+    translate: translate(rotate(360 deg)smooth);
+    border: none;
+    /* visibility: hidden; */
+}
+#display{
+    background-color:whitesmoke;
+    margin-bottom: 1%;
+    border-radius: 20px;
+   
+
+}
+#display:hover{
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    visibility: hidden;
+}

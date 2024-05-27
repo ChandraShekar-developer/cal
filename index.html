@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <h1>basic calculator</h1><br>
+    <input type="text" id="display" readonly><br>
+
+    <div class="div"><br>
+        <td>
+            <tr><button onclick="appendtodisplay('1')">1</button></tr>
+            <tr><button onclick="appendtodisplay('2')">2</button></tr>
+            <tr><button onclick="appendtodisplay('3')">3</button></tr>
+            <tr><button onclick="appendtodisplay('+')">+</button></tr>
+            <tr><button onclick="cleardisplay()">c</button></tr>
+
+            
+        </td>
+    </div><br>
+    <div class="div1">
+        <td>
+        <tr><button onclick="appendtodisplay('4')">4</button></tr>
+            <tr><button onclick="appendtodisplay('5')">5</button></tr>
+            <tr><button onclick="appendtodisplay('6')">6</button></tr>
+            <tr><button onclick="appendtodisplay('-')">-</button></tr>
+            <tr><button onclick="deletelast()">d</button></tr>
+            </td>
+            
+    </div><br>
+    <div class="div2">
+        <td>
+        <tr><button onclick="appendtodisplay('7')">7</button></tr>
+            <tr><button onclick="appendtodisplay('8')">8</button></tr>
+            <tr><button onclick="appendtodisplay('9')">9</button></tr>
+            <tr><button onclick="appendtodisplay('*')">*</button></tr>
+            <tr><button onclick="appendtodisplay('%')">%</button></tr>
+            </td>
+    </div><br>
+    <div class="div3">
+        <td>
+        <tr><button onclick="appendtodisplay('0')">0</button></tr>
+            <tr><button onclick="appendtodisplay('00')">00</button></tr>
+           
+            <tr><button onclick="appendtodisplay('000')">000</button></tr>
+            <tr><button onclick="calculate('=')">=</button></tr>
+            </td>
+    </div><br>
+        
+   
+
+    
+</body>
+    <script>
+        alert('hello user');
+        confirm( 'ok')
+        let person=prompt('pls enter yuor name ,')
+        if (person!= null){
+            document.getElementById('body').innerHTML=' hello '+ person+ "how is your day";
+        }
+
+        function appendtodisplay(value) {
+            document.getElementById('display').value += value;
+            //appendtodisplay is user wnter the value .
+            // 'display ' is its showing the value ... 
+        }
+        function calculate(value){
+            try{
+                document.getElementById('display').value = eval(document.getElementById('display').value);
+            }catch(error){
+                document.getElementById('display').value = 'Error';
+            }
+        }   
+
+        function cleardisplay() {
+            document.getElementById('display').value = '';
+        }
+
+        function deletelast(){
+            document.getElementById('display');
+                display.value= display.value.slice(0,-1);
+        }
+       
+
+    </script>
+</html>
+
+
+
+
+
